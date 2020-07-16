@@ -1,0 +1,16 @@
+body{
+    font-size: 20px;
+    line-height: 1.5em;
+}
+p.text{
+    font-weight: bold;
+    text-decoration : line-through;
+    text-align: justify;
+}
+h1{
+    font-weight: normal;
+}
+p{
+    text-transform: uppercase;
+    
+}

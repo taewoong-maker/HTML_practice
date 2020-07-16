@@ -1,0 +1,20 @@
+p{
+    text-align: center;
+    color: red;
+}
+p.center{
+    text-align: right;
+    color: blue;
+}
+#center{
+    text-align: left;
+    color: orange;
+}
+h1, p.aa{
+    color: red;
+    text-align: center;
+    font-size: 30px;
+}
+p.aa b{
+    color: blue;
+}

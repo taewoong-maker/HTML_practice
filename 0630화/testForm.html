@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta sam03="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{font-size:16pt;
+        font-weight: bold;
+        font-family: Comic sans MS;
+        margin-left: 30px;}
+        .input_group{
+            border-top: 1px dotted;
+            
+            }
+        a{
+        margin-left: 70px;
+        text-decoration:"none";
+        color: rgb(49, 141, 141);
+    }
+    </style>
+    <script type="text"/javascript">
+    var flag=false;
+
+    function move(){
+    }
+    function pwdNumber(){
+        var pwd = myform.user_pwd.value;
+        var size = myform.user_pwd.value.length;
+        for(var i=0; i<size;i++){
+            if(pwd.chatAt(i)<'0'||pwd.charAt(i)>'9'){
+                alert("정확한 숫자를 입력하세요");
+                myform.user_pwd.value=pwd.substr(0,i);
+                myform.user_pwd.focus( );
+            }
+        }
+    }
+    
+    </script>
+</head>
+
+<body>
+    <div style="widows: 800px;" >
+        <form name="myform">
+            <fielset>
+                <legend>testForm.html</legend>
+                <div class="input_group">
+                    <label>이름:</label>
+                    <input type = text name="user_name"/>
+                </div>
+
+                <div class="input_group">
+                    <label>주번:</label>
+                    <input type=text name="user_pwd"/>
+                </div>
+
+                <div class="input_group">
+                    <lable>성별:</lable>
+                    <lable> <input type="radio" name="gender" value="M">남자</lable>
+                    <lable> <input type="radio" name="gender" value="W" checked="checked"> 여자</lable>                    
+                    </lable>
+                </div>
+                <div class="input_group">
+                    <label>직업:</label>
+                    <select name="job">
+                        <option>----선택하세요----</option>
+                        <option value="dev">프로그램 개발자</option>
+                        <option value="coder" selected="selected">coder</option>
+                        <option value="pub">퍼블리셔</option>
+                        <option value="DBA">DB관리자</option>
+                    </select>
+                </div>
+
+                <div class="input_group">
+                    <label>취미:</label>
+                    <label>
+                        <input type="checkbox" name="hobby" value="play" checked="checked">축구</label>
+                        <label><input type="checkbox" name="hobby" value="movie" >영화보기</label>
+                        <label><input type="checkbox" name="hobby" value="study" >공부하기</label>
+                </div>
+
+                <div class="input_group">
+                    <label>파일:</label>
+                    <label>
+                        <input type="file" name="myfile" size="10"> </label>
+                </div>
+
+                <div class="input_group">
+                    <label>내용:</label>
+                    <label><textarea name = "memo" rows="3" cols="30"> best choice</textarea> </label>
+                </div>
+                
+                <div class="input_group">  </div>
+
+                <div class="input_group">
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input type="button" onclick="move()" value="서브및전송">
+                    <input type="reset" value="입력취소">
+                </div>                
+                <div>
+                    <a href="#">메뉴</a>
+                    <a href="#">관리자</a>
+                    <a href="http://www.naver.com">도움말</a>
+                </div>
+            </fielset>
+        </form>
+    </div>
+    
+   
+   
+</body>
+</html>

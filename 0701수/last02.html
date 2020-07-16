@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LastProject</title>
+    <style>
+        .content{
+            background-color: rgb(233, 233, 233);  
+            font-size: 11pt;     
+        }
+        .content1{
+            margin-top: 50px;
+            background-color: rgb(233, 233, 233);  
+            font-size: 11pt;     
+        }
+        .main{
+           width: 700px;
+           margin: auto;
+           border: solid white;
+           background-color: white;   
+           padding: 40px;        
+        }
+        .main1{
+           width: 700px;
+           margin: auto;
+           border: solid white;
+           background-color: white;   
+           padding: 40px;        
+        }
+
+        .intro{
+            background-color: white;   
+            margin-bottom: 20px;
+        }
+
+        .exp{
+            background-color: white;   
+            margin-bottom: 20px;
+            font-weight: bolder;
+        }
+       
+        .text{
+            font-size: 14pt;   
+            font-weight: bolder;              
+        }    
+        .star{
+            font-size: 11pt;
+            color: red;
+            text-align: right;
+            
+        }   
+        .square{
+            height: 16pt;
+            width: 85%;
+            margin-bottom: 10px;
+            font-size: 14pt;
+            background-color: rgb(255, 255, 255);
+            border: solid 1px;
+            padding: 8px; 
+            color:rgb(153, 151, 151)
+        }
+        .square1{
+            height: 16pt;
+            width: 70%;
+            margin-bottom: 10px;
+            font-size: 14pt;
+            background-color: rgb(255, 255, 255);
+            border: solid 1px;
+            padding: 8px; 
+            color:rgb(153, 151, 151)
+        }
+        .name{
+            width: 350px;
+            float: left;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+        }
+        .sex{
+            width: 350px;
+            float: right;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+        }
+        .both{
+            clear: both;
+        }
+        .birth{
+            width: 350px;
+            float: left;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+        }
+        .country{                
+            width: 350px;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+            float: right;
+        }
+        .phone{
+            clear: both;
+        }
+        .almost{
+            background-color: white;   
+            margin-bottom: 20px;
+        }
+        .an{
+            font-weight: bolder;
+            font-size: 14pt;   
+        }
+        .yak{
+            font-weight: bolder;
+            font-size: 14pt;   
+        }
+        .signup{
+            color: rgb(255, 255, 255);
+            background-color: rgb(103, 211, 241);
+            margin: 5pt;
+            padding-left: 20pt;
+            padding-right: 20pt;
+            padding-top: 8pt;
+            padding-bottom: 8pt;
+            border: 0px solid rgb(172, 172, 172);
+        }
+        .cancel{
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            margin: 5pt;
+            padding-left: 20pt;
+            padding-right: 20pt;
+            padding-top: 8pt;
+            padding-bottom: 8pt;
+            border: 1px solid rgb(61, 61, 61);
+        }
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body>
+<div class="content">
+    <h1 align="center">회원가입</h1>   
+    
+    <div class="star">
+        * 표시는 필수 입력 항목입니다.
+    </div>  
+    <div class="main">
+      
+        
+        <div class="intro">
+            이대목동병원 홈페이지 회원은 별도의 회원가입 절차 없이<br>
+            같은 아이디로 이대서울병원 홈페이지를 이용하실 수 있습니다.
+        </div>
+
+        <div class="exp">
+            *환자 본인 예약만 가능합니다.<br>
+            *만 14세 미만 소아청소년 회원가입시, 보호자(법적 대리인)의 본인 인증이 필요합니다.
+        </div>
+
+        <div class="almost">
+            <font class="text">*아이디</font><br>
+            <input type="text" class="square" name="id" id="id" value="영문포함 6글자 이상">
+        </div>
+
+        <div class="almost">
+            <font class="text">*비밀번호</font><br>
+            대문자, 소문자, 숫자 조합으로 8자리 이상 입력하시면 자동으로 ‘사용 가능’으로 바뀝니다<br>
+            <input type="text" class="square" name="password" id="password" value="영문 대소문자+숫자 8자 이상"><br>
+            <input type="text" class="square" name="password" id="password" value="영문 대소문자+숫자 8자 이상"><br><br>
+        </div>
+
+        <div class="both">
+            <div class="name">
+                <font class="text">*이름</font><br>
+                <input type="text" class="square1" name="name" id="name" value="홍길동">
+            </div>
+
+            <div class="sex">  
+                <font class="text">성별</font><br><br>
+                <lable> <input type="radio" name="gender" value="M">남자</lable>
+                <lable> <input type="radio" name="gender" value="W" checked="checked"> 여자</lable>
+            </div>
+        </div>
+
+        <div class="both">
+            <div class="birth">
+                <font class="text">*생년월일</font><br>
+                <input type="text" class="square1" name="birth" id="birth" value="1980년 3월 20일인 경우:19800320"><br><br>
+            </div>
+        </div>
+        
+        <div class="country">
+            <font class="text">내/외국인</font><br><br>
+            <lable> <input type="radio" name="country" value="I">내국인</lable>
+            <lable> <input type="radio" name="country" value="O" checked="checked"> 외국인</lable>
+        </div>
+
+        <div class="phone">
+            <font class="text">전화번호</font><br>    
+            <input type="text" class="square"  id="phone" value="'-'제외하고 입력"><br><br>
+        </div>
+
+        <div class="almost">
+            <font class="text">*휴대전화번호</font><br>    
+            <input type="text" class="square" name="mobile" id="mobile" value="'-'제외하고 입력"><br><br>
+        </div>
+
+        <div class="almost">
+            <font class="text">*이메일</font><br>    
+            <input type="text" class="square" name="email" id="email"><br><br>
+        </div>
+
+        <div class="almost">
+            <font class="text">*주소</font><br>    
+            <input type="text" class="square" name="juso1" id="juso1"><br>
+            <input type="text" class="square" name="juso2" id="juso2" value="나머지 주소 입력">
+        </div>
+    </div>
+    <br><br>
+    <div class="main1">
+               
+        <div class="yak">
+            이대서울병원 회원 이용약관
+        </div>
+            <br>
+        <div class="yak1">
+            <textarea  cols="100" rows="5" >
+                [제1조] 약관 동의
+                이화여자대학교 의료원 및 산하 기관은(이하 “의료원”) 본원 홈페이지 이용자 및 산하 홈페이지 이용자(이하 "이용자")가 홈페이지 서비스 약관(이하 "약관")에 동의하는 것을 조건으로 하여 홈페이지 서비스를 제공한다.
+                
+                [제2조] 목적
+                홈페이지 서비스 약관은 홈페이지가 제공하는 여러 인터넷 서비스(이하 "서비스")를 이용자가 이용 함에 있어 홈페이지와 이용자의 이용 및 절차, 기타 필요한 사항 등을 규정함을 그 목적으로 한다.
+                
+                [제3조] 이용자의 정의 및 대상
+                - 일반인, 의사(병원 인터넷 진료의뢰 서비스 이용시)의 경우
+                ① 이용자란 본원 각 대학 홈페이지에 접속하여 약관에 동의하고 ID(사용자 계정)와 Password(비밀번호)를 발급받은 본원 각 대학 홈페이지가 제공하는 서비스를 받는자를 말한다.
+                ② 가입대상 중 진료의뢰 서비스를 이용하고자 하는 의사는 의사면허를 소지한
+                </textarea>
+        </div>            
+       <br><br>
+        <div class="an">
+            개인정보 수집 및 이용에 대한 안내
+        </div>
+        <br>
+        <div class="an1">
+            <textarea  cols="100" rows="6" >
+                1.처리하는 개인정보의 항목
+                병원은 서비스 제공을 위해 필요한 최소한의 개인정보만을 수집합니다.
+                귀하가 병원의 서비스를 이용하기 위해서는 필수항목과 선택항목을 기입하여야 하며, 선택항목은 기입하지 않더라도 기본 서비스 제공에는 지장이 없습니다. 병원은 동의에 의해 수집한 정보만을 적법하게 처리합니다.
+                
+                가. [회원가입 시 수집항목]
+                - 필수항목 : 이름, 로그인ID, 비밀번호, 이메일
+                - 선택항목 : 휴대전화번호 
+                나. [고객의소리] 
+                - 필수항목 : 고객명, 휴대전화번호 또는 이메일
+                - 선택항목 : 환자명, 환자등록번호, 생년월일 
+                다. [인터넷예약]
+                - 필수항목 : 주민등록번호, 고객명, 이메일, 전화번호, 휴대폰번호
+                라. [진료협력 의사회원]
+                - 필수항목 : 의사구분, 병원명, 병원기관기호, 의사면허번호, 전문진료과, 병원전화, 로그인 인증여부, 아이디, 비밀번호, 이름, 주소, 이메일, 휴대전화번호
+                - 선택항목 : 휴대전화2, 팩스, 홈페이지 주소, 학교명 또는 직장명, 직장전화 
+                마. [강좌신청]
+                - 필수항목 : 강좌명, 신청자명, 휴대폰번호, 환자등록번호, 주치의명
+                - 선택항목 : 연락처
+                바. [발전기금 기탁]
+                - 필수항목 : 성명(상호명), 생년월일, 사업자등록번호, 의료원과의 관계, 주소 및 연락처(자택, 직장, 휴대폰 번호, e-mail 주소), 약정금액, 납부정보(기간, 방법). 영수증 발급 동의 여부
+                - 선택항목 : CMS 정보(은행명, 예금주, 계좌번호, 이체일), 네이밍 동의 여부
+                
+                2. 개인정보의 처리 목적
+                병원은 수집한 개인정보를 다음의 목적을 위해 활용합니다. 이용자가 제공한 모든 정보는 다음에 기술한 목적 이외로는 사용되지 않으며, 이용 목적이 변경될 시에는 사전 동의를 구할 것입니다. 
+                
+                가. 회원 관리
+                - 회원제 서비스 이용에 따른 본인 확인
+                - 개인 식별
+                - 불량회원의 부정 이용 방지와 비인가 사용 방지
+                - 가입 의사 확인
+                - 연령 확인
+                - 불만 처리 등 민원 처리
+                - 고지사항 전달
+                나. 마케팅 및 광고에 활용
+                - 인구통계학적 특성에 따른 서비스 제공 및 광고 게재
+                다. 기타
+                - 진료 의뢰 환자의 예약 처리를 위한 자료
+                - 후원 신청자의 기금 처리를 위한 자료
+                - 교육 신청자의 교육 진행을 위한 자료   
+            </textarea>
+        </div>
+        <div align="center">
+        <input type="button" class="cancel" value="취소">
+        <input type="button" class="signup" value="가입">
+        </div>
+    </div>
+</div>
+    
+  
+
+</body>
+</html>

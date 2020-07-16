@@ -1,0 +1,26 @@
+.parent{    
+    border: 5px red solid;
+    width: 600px;
+    
+}
+.child1{
+    border: 1px black solid;    
+    height: 200px;
+    background-color: black;    
+}
+.child2{    
+    width: 400px;
+    height: 200px;
+    float: right;
+    background-color: blue;
+}
+.child3{    
+    float: left;
+    height: 200px;
+    width: 200px;    
+    background-color: pink;
+}.child4{
+    background-color: orange;
+    height: 50px;
+    clear: both;
+}
