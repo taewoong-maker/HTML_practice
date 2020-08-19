@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- <script src="https:///code.jquery.com/ui/1.12.1/jquery-ui.js"></script>   -->
+    <script>
+       $(function(){
+         $('#menu li:first').css("color","red")
+         $('#menu li:last').css("color","blue")
+         $('#menu li:even').css("font-size","20pt")
+         $('#menu li:odd').css("font-size","15pt")
+         $('#menu li:lt(3)').css('background-color','yellow')
+         $('#menu li:gt(4)').css('background-color','dodgerblue')
+         $('#menu li:eq(4)').css('border','1px solid red')
+         $('#menu li:nth-child(4)').css('border','3px solid black')
+       })
+       $(function(){
+         $('ul:last-of-type').css("color","pink")
+         $('#menu2 li:nth-last-of-type(2)').css('border','1px solid red')
+         $('#menu2 li:nth-last-child(3)').css('background-color','red')
+       })
+    </script>
+</head>
+
+<body>
+    <h1>탐색 선택자</h1>
+    <ul id='menu'>
+      <li>내용1-1</li>
+      <li>내용1-2</li>
+      <li>내용1-3</li>
+      <li>내용1-4</li>
+      <li>내용1-5</li>
+      <li>내용1-6</li>
+    </ul>
+    <ul id='menu2'>
+      <li>내용2-1</li>
+      <li>내용2-2</li>
+      <li>내용2-3</li>
+      <li>내용2-4</li>
+      <li>내용2-5</li>
+      <li>내용2-6</li>
+    </ul>
+    <li>내용7</li>
+    <li>내용8</li>
+</body>
+</html>
