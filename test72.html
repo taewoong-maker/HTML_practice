@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aa</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(function(){
+        var idxNum=$("li").index($('li:last-child'));
+        console.log(idxNum);
+    });
+
+    $(function(){
+        $('#wrap a[target]').css({"color":"#f00"}); //target 속성을 포함하는 요소만 선택
+        $('#wrap a[href^=https]').css({"color":"#0f0"}); //href 속성값이 "https"로 시작하는 요소만 선택
+        $('#wrap a[href$=net]').css({"color":"#00f"}); //href 속성값이  net으로 끝나는 요소만 서
+        $('#wrap a[href*=google]').css({"color":"#000"}); //href 속성값에 google이 포함된 요소만 선택
+        $('#member_f:text').css({"background-color":"#ff0"}); //href 속성값에 google이 포함된 요소만 선택        
+        $('#member_f:password').css({"background-color":"#0ff"}); //href 속성값에 google이 포함된 요소만 선택        
+    });
+</script>
+<body>
+    <h1>배열관련함수</h1>
+
+    <ul>
+        <li>내용1</li>
+        <li>내용2</li>
+        <li id="list3">내용3</li>
+        <li>내용4</li>
+    </ul>
+    <div id="wrap">
+        <p>
+            <a href="http://easyspub.co.kr" target="_blank">Easyspub</a>
+        </p>
+        <p>
+            <a href="https://naver.com" target="_blank">Naver</a>
+        </p>
+        <p>
+            <a href="http://google.co.kr" target="_blank">Google</a>
+        </p>
+        <p>
+            <a href="http://daum.net" target="_blank">Daum</a>
+        </p>
+    </div>
+    <form action="#" method="get" id="member_f">
+        <p>
+            <label for="user_id">아이디</label>
+             <input type="text" name="user_id" id="user_id">
+        </p>
+        <p>
+            <label for="user_pw">비밀번호</label>
+            <input type="password" name="user_pw" id="user_pw">
+        </p>
+    </form>
+</body>
+</html>
